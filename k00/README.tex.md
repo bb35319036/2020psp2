@@ -33,4 +33,6 @@ l.39: 最大値max_valを出力
 l.40: 最小値min_valを出力
 
 ## 修正履歴
+#include <stdio.h>
+
 
