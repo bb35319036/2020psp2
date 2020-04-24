@@ -16,8 +16,8 @@ int main(void)
     char fname[FILENAME_MAX];
     char buf[256];
     FILE* fp;
-    double average,Fx;
-    int i,gen;
+    double Fx;
+    int i;
     i=0;
 
 
@@ -31,10 +31,9 @@ int main(void)
         fputs("File open error\n",stderr);
         exit(EXIT_FAILURE);
     }
-    fgets(buf,sizeof(buf),fp);
     while(fgets(buf,sizeof(buf),fp) != NULL)
     {
-        sscanf(buf,"%d, %lf",&gen, &val);
+        sscanf(buf,"%lf",&val);
         i++;//i=0と宣言しているのでi++を前に置く
         var=var_online(val,ave,square_ave,i);//自作した分散を求める関数を繰り返すようにここに置く
         ave=ave_online(ave,val,i);
@@ -54,7 +53,8 @@ int main(void)
     printf("ave=%lf\n",ave);
     printf("var=%lf\n",var);
 
-    printf("unvar=%lf\n",Fx);
+    printf("est var=%lf\n",Fx);
+    printf("est ave=%lf\n",ave);//READ ME の「平均の推定値は，標本の平均が最良である」より平均をもう一度出力
     return 0;
     
 }
