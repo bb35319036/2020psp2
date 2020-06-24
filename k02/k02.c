@@ -53,14 +53,10 @@ int main(void)
         fputs("file close error\n",stderr);
         exit(EXIT_FAILURE);
     }
-
-if(L1>L2){//if文で最大最小を比較
-
-    max_val=L1;
-    min_val=L2;}
-else{ 
+    
+    
     min_val=L2;
-    max_val=L1;}
+    max_val=L1;
  
   printf("L_A: %f\n",max_val);
   printf("L_B: %f\n",min_val);
