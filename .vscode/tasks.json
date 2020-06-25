@@ -11,6 +11,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-W",
                 "-Wall",
+                "-Wextra",
                 "-O5",
                 "-ggdb",
                 "-fexec-charset=CP932"
