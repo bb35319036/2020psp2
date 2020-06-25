@@ -22,8 +22,7 @@ bb35319036 半田丈都
 ## ソースコードの説明
 2.37  標準化した値を出す
 2.38  p_stdnormの関数に代入し尤度を出す
-2.55  if文で最大最小を比較
-## 入出力結果
+
 
 ## 修正履歴
 
@@ -50,7 +49,17 @@ L_B：0.000002
 
 [comment半田]
 min_val,max_valと書いてあったので大小の比較が必要なのかと考えておりました。添削ありがとうございます。
+
+## 入出力結果
 input the filename of sample:c:\Users\admin\Documents\GitHub\2020psp2\sample\heights_male.csv
+
 the filename of sample: c:\Users\admin\Documents\GitHub\2020psp2\sample\heights_male.csv
+
 L_A: 0.000006
+
 L_B: 0.000002
+
+[comment0625宮下]
+
+課題提出お疲れさまでした！k02は完了です。
+
