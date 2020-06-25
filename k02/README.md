@@ -25,6 +25,13 @@ bb35319036 半田丈都
 2.55  if文で最大最小を比較
 ## 入出力結果
 
+## 入出力結果
+
+```
+Likelihood for A：
+Likelihood for B：
+```
+
 ## 修正履歴
 
 [comment0624宮下]
