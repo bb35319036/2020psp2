@@ -24,6 +24,13 @@ bb35319036 半田丈都
 2.38  p_stdnormの関数に代入し尤度を出す
 
 
+## 入出力結果
+
+```
+Likelihood for A：
+Likelihood for B：
+```
+
 ## 修正履歴
 
 [comment0624宮下]
