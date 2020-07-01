@@ -66,8 +66,11 @@ int main(int argc, char* argv[])
 
 
 ## ソースコードの説明
+29   実行時に指定した値を読み取りmu,sigma,num_dummyに格納
+48   r_stdnormで出した乱数から捏造したデータを算出
 
 ## 入出力結果
+
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
 
@@ -85,6 +88,18 @@ Num of dummy data: 5
 ```
 
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
+PS C:\Users\admin\Documents\GitHub\2020psp2\k03> gcc -o k03 k03.c
+PS C:\Users\admin\Documents\GitHub\2020psp2\k03> ./k03 170.8 5.43 5
+============================================
+template mean: 170.8
+template standard deviation: 5.43
+Num of dummy data: 5
+============================================
+171.17
+171.37
+170.80
+166.43
+169.14
 
 
 
