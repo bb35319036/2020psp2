@@ -90,6 +90,7 @@ Num of dummy data: 5
 コンパイル時に`-DCONST_SEED`をつけない場合を以下に示す．
 PS C:\Users\admin\Documents\GitHub\2020psp2\k03> gcc -o k03 k03.c
 PS C:\Users\admin\Documents\GitHub\2020psp2\k03> ./k03 170.8 5.43 5
+```
 ============================================
 template mean: 170.8
 template standard deviation: 5.43
@@ -100,8 +101,13 @@ Num of dummy data: 5
 170.80
 166.43
 169.14
-
+```
 
 
 ## 修正履歴
 
+[comment0715宮下]
+
+課題提出お疲れさまでした！修正点があります。
+- L46　for文を0~4の5周としていますが正しくは(num_dummy)周です。コードをいじることなく、実行の際に指定できることが良い点です。
+- L48　標準化をしているのでしょうか？おそらく必要ないと思います。結局０を引いて１で割っているので省略していいと思います。また、sigmaは分散なのでsqrt()は不要です。'dummy = r_stdnorm()*sigma +mu'で大丈夫です。
