@@ -17,6 +17,20 @@ bb35319036 半田丈都
 93 もしIDが一致しデータがあればｊは＋１されるのでプラスされない場合Nodataが出力される
 ## 入出力結果
 
+PS C:\Users\admin\Documents\GitHub\2020psp2\k04> ./k04
+input the filename of sample height:c:\Users\admin\Documents\GitHub\2020psp2\sample\heights.csv
+input the filename of sample ID:c:\Users\admin\Documents\GitHub\2020psp2\sample\IDs.csv
+Which ID's data do you want? : 45318088
+45318088
+Male
+171.1
+
+PS C:\Users\admin\Documents\GitHub\2020psp2\k04> ./k04
+input the filename of sample height:c:\Users\admin\Documents\GitHub\2020psp2\sample\heights.csv
+input the filename of sample ID:c:\Users\admin\Documents\GitHub\2020psp2\sample\IDs.csv
+Which ID's data do you want? : 1
+No data
+
 例えば，ID 45313125のデータを調べたいとき，
 
 ```
