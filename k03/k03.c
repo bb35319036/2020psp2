@@ -42,10 +42,10 @@ sscanf(argv[argc-1] ,"%d",&num_dummy);
    
    
     srand(RAND_SEED);
-
-    for(i=0 ;i<=4 ;i++)
+    
+    for(i=1; i<=num_dummy ;i++)
     /* r_stdnormを使って，1人のデータを捏造 */
-     {   dummy = (r_stdnorm() - _AVE_)/sqrt(_SIGMA_) * sqrt(sigma) +mu; //r_stdnormで出した乱数から捏造したデータを算出//
+     {   dummy = r_stdnorm() * sigma +mu; //r_stdnormで出した乱数から捏造したデータを算出//
     
            printf("%5.2lf\n",dummy);
     }
