@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 29   実行時に指定した値を読み取りmu,sigma,num_dummyに格納
 48   r_stdnormで出した乱数から捏造したデータを算出
 
-## 入出力結果
+<!-- ## 入出力結果 -->
 
 
 以下は例です． コンパイルするときに`-DCONST_SEED`をつけるとこうなります．
